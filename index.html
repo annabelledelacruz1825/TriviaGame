@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script type="text/javascript"></script>
+             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                     
+
+</head>
+<style>
+
+
+</style>
+</body>
+<div class="container">
+      <div class="header">
+        <h1 class="text"> Supernatural Trivia game</h1>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+        <div id="game">
+         <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+          <p id="question" class="lead"></p>
+                  </div>
+	</div>
+	<div class="row"> </div>
+        <div id="choices" class="text-center"> </div>
+          <button id="start" class="btn btn-info btn-lg">Start Game</button>
+		  <div >
+		</div>
+		<div id="quiz"></div>
+		<button id="submit">Submit Quiz</button>
+		<div id="results"></div>
+    <div>
+        <p id="demo"></p>
+      
+        <script>
+
+function timer(){
+count--;
+if (count <= 0) {
+ clearInterval(counter);
+ return;
+}
+
+ $("#timer").html("Time remaining: " + "00:" + count + " secs");
+}
+
+
+        </script>   
+</body>
+<script>
+    var myQuestions = [
+	{
+		question: "Which one of these people is Dean brother",
+		answers: ["Crowley","Sam","Castiel"],
+		correctAnswer: ["1"]
+	},
+	{
+		question: "what car does Dean and Sam drive?",
+		answers: ["Impala","Toyota","Ford"],
+		correctAnswer: ["0"]
+	},
+	{
+		question: "which of the following is an Ange;",
+		answers: ["Sam","Castiel","Crowley"],
+		correctAnswer: ["2"]
+	},
+
+];
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+
+function buildGame(){}
+
+function showResults(){}
+
+
+</script>
+</html>
